@@ -1,0 +1,8 @@
+{
+  "inputProcessor": {
+    "name": "default:google-sheets",
+    "config": {
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRIS-3lQwMkxw1PRtDujHhJEa1u8glVxdL2X36xdIZBUONMxAOowwN90TdZJ1IfV-emZ5Zr9Dcsx2SX/pub?output=xlsx"
+    }
+  }
+}

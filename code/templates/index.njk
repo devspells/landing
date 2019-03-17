@@ -1,0 +1,35 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="index.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+  <header>
+    <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+  </header>
+
+  <main>
+    <section>
+      <h1 class="title">{{ title }}</h1>
+
+      <strong class="subtitle">{{ subtitle }}</strong>
+
+      {% for about in about_texts %}
+      <p class="about">{{ about.text }}</p>
+      {% endfor %}
+
+      <address class="email">
+        <span class="email__title">{{ email_title }}</span>
+        <a class="email__link" href="mailto:{{ email }}">{{ email }}</a>
+      </address>
+    </section>
+  </main>
+</div>
+
+<div class="root-background"></div>
+
+<script src="index.js" defer async></script>
+{% endblock %}

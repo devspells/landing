@@ -1,0 +1,13 @@
+.title {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: solid 5px var(--blue);
+}
+
+@media (min-width: 800px) {
+  
+  .title { font-size: 40px; margin-top: 2.5em; }
+}

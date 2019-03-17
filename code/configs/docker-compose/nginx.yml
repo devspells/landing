@@ -1,0 +1,10 @@
+version: '2'
+services:
+  website:
+    image: 'nginx'
+    volumes:
+      - ../../configs/nginx.conf:/etc/nginx/nginx.conf
+      - ../../build/:/usr/share/nginx/html/
+    ports:
+      - '80:80'
+    command: 'nginx -g "daemon off;"'

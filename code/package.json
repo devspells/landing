@@ -1,0 +1,41 @@
+{
+  "name": "computerization-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NPM_SCRIPT=build ./scripts/npm-script.sh",
+    "dev": "NPM_SCRIPT=dev ./scripts/npm-script.sh",
+    "nginx": "./scripts/start-nginx.sh",
+    "reinstall": "NPM_SCRIPT=reinstall ./scripts/npm-script.sh",
+    "deploy": "./scripts/deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "chokidar": "^2.1.2",
+    "contentica": "^1.1.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "fs-extra": "^7.0.1",
+    "fs-readdir-recursive": "^1.1.0",
+    "html-minifier": "^3.5.21",
+    "http-server": "^0.11.1",
+    "jsdom": "^14.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "rimraf": "^2.6.3",
+    "sw-precache": "^5.2.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-manifest-plugin": "^2.0.4"
+  },
+  "dependencies": {
+    "computerization-logo": "^2.0.0"
+  }
+}

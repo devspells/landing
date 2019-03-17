@@ -1,0 +1,35 @@
+.email {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 14px;
+  font-style: normal;
+  display: normal;
+}
+
+.email__title:before {
+  content: '@';
+  color: var(--yellow);
+  font-size: 18px;
+  opacity: .75;
+  margin-right: 0.25em;
+}
+
+.email__title {
+  font-weight: bold;
+}
+
+
+.email__link {
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: dashed 2px var(--yellow);
+}
+
+.email__link:hover { border-bottom: dashed 2px var(--blue); }
+
+@media (min-width: 800px) {
+
+  .email { font-size: 20px; }
+
+  .email__title:before { font-size: 30px; }
+}

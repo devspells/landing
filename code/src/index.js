@@ -1,0 +1,11 @@
+// blocks
+import './blocks/service-worker';
+import './blocks/global';
+import './blocks/google-analytics';
+import './blocks/root-background';
+import './blocks/content';
+import './blocks/logo';
+import './blocks/title';
+import './blocks/subtitle';
+import './blocks/about';
+import './blocks/email';

@@ -1,0 +1,6 @@
+code/node_modules/
+code/html/
+code/build/
+
+*.swp
+*.swo
