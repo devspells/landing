@@ -1,0 +1,97 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="waloun.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+  <header>
+    <a href="/">
+      <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+    </a>
+  </header>
+
+  <main>
+    <section>
+      <div class="waloun-hero-image">
+        <h1 class="title">{{title}} <span class="title__tiny">{{title_tiny}}</span></h1>
+        <strong class="subtitle">{{ subtitle }}</strong>
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_intro_title }}</h2>
+
+          {% for item in product_feature_intro %}
+          <p class="
+            product-feature__text
+            {{ "product-feature__text_quote" if +item.quote}}
+            {{ "product-feature__text_quote-last" if +item.last_quote }}
+          ">
+          {{ item.text }}<b>{{ item.last_char  if item.last_char }}</b>
+          </p>
+          {% endfor %}
+        </div>
+
+        <img class="product-feature__image" src="assets/waloun.png" alt="{{ product_feature_intro_alt }}">
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_create_title }}</h2>
+
+          {% for item in product_feature_create %}
+          <p class="product-feature__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+          <img class="product-feature__image" src="assets/waloun-add-record-form.png" alt="{{ product_feature_create_alt }}">
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_timetable_title }}</h2>
+
+          {% for item in product_feature_timetable %}
+          <p class="product-feature__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+        <img class="product-feature__image" src="assets/waloun-timetable.png" alt="{{ product_feature_timetable_alt }}">
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_easyuse_title }}</h2>
+
+          {% for item in product_feature_easyuse %}
+          <p class="product-feature__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+        <img class="product-feature__image" src="assets/waloun-easy-use.png" alt="{{ product_feature_easyuse_alt }}">
+      </div>
+
+
+      <div class="user-action">
+        <strong>{{ user_action_title }}</strong>
+        {% for item in user_action_text %}
+        <br>
+        {{ item.text }}
+        {% endfor %}
+        <br>
+
+        <a class="user-action__phone" href="tel:{{ phone_href }}">{{ phone_text }}</a>
+        <br>
+        <a class="user-action__email" href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="common.js" defer async></script>
+<script src="waloun.js" defer async></script>
+{% endblock %}

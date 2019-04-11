@@ -1,0 +1,37 @@
+.waloun-hero-image {
+  z-index: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  background-image: url('./waloun-hero-image_mobile.svg');
+
+  height: 400px;
+}
+
+@media (min-width: 450px) {
+  .waloun-hero-image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 700px) {
+  .waloun-hero-image {
+    background-image: url('./waloun-hero-image_mobile-wide.svg');
+  }
+}
+
+@media (min-width: 800px) {
+  .waloun-hero-image {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .waloun-hero-image {
+    height: 740px;
+    background-position: bottom right;
+    background-size: 100%;
+    background-image: url('./waloun-hero-image.svg');
+  }
+}

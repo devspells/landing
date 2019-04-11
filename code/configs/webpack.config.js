@@ -6,7 +6,9 @@ const
   
 module.exports = {
   entry: {
-    index: __dirname + '/../src/index.js'
+    common: __dirname + '/../src/common.js',
+    index: __dirname + '/../src/index.js',
+    waloun: __dirname + '/../src/waloun.js',
   },
   output: { filename: '[name]-[hash].js', path: __dirname + '/../build/assets' },
   resolve: {

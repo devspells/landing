@@ -1,12 +1,8 @@
 .logo {
   margin-top: 2em;
-  max-width: 7em;
+  max-width: 5em;
 }
 
 @media (min-width: 400px) {
-  .logo { max-width: 10em; }
-}
-
-@media (min-width: 800px) {
-  .logo { max-width: 17em; }
+  .logo { max-width: 7em; }
 }
