@@ -1,7 +1,8 @@
 const
   path = require('path'),
   ManifestPlugin = require('webpack-manifest-plugin'),
-  MiniCssExtractPlugin = require('mini-css-extract-plugin');
+  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+  webpack = require('webpack');
 
   
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
     common: __dirname + '/../src/common.js',
     index: __dirname + '/../src/index.js',
     waloun: __dirname + '/../src/waloun.js',
+    'production-info': __dirname + '/../src/production-info.js',
   },
   output: { filename: '[name]-[hash].js', path: __dirname + '/../build/assets' },
   resolve: {
@@ -36,6 +38,9 @@ module.exports = {
   },
   plugins: [
     new ManifestPlugin(),
-    new MiniCssExtractPlugin({ filename: '[name]-[hash].css' })
+    new MiniCssExtractPlugin({ filename: '[name]-[hash].css' }),
+    new webpack.DefinePlugin({
+      'process.env.APP_ENV': JSON.stringify(process.env.APP_ENV),
+    })
   ]
 };

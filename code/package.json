@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NPM_SCRIPT=build ./scripts/npm-script.sh",
     "dev": "NPM_SCRIPT=dev ./scripts/npm-script.sh",
     "nginx": "./scripts/start-nginx.sh",
