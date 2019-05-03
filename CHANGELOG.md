@@ -1,6 +1,13 @@
 landing changelog
 =================
 
+[1.4.0] - 03.05.2019
+--------------------
+Added:
+* offers page
+* products page
+* projects page
+
 [1.3.0] - 02.05.2019
 --------------------
 Added:

@@ -1,0 +1,49 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="products.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+  <header class="header-with-nav">
+    <div>
+      <a href="/">
+        <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+      </a>
+    </div>
+
+    <div>
+      {% include "partials/nav.njk" %}
+    </div>
+  </header>
+
+
+  <main>
+    <section>
+      <h1 class="title">{{ page_title }}</h1>
+
+      <strong class="subtitle">{{ page_subtitle }}</strong>
+
+      <ul class="items-grid">
+        {% for product in products %}
+        <li class="project-info">
+          <h2 class="project-info__title">{{ product.title }}</h2>
+
+          <img class="project-info__image" alt="{{ product.alt }}" src="{{ product.img }}">
+
+          <a href="{{ product.link }}" class="project-info__link">{{ product.link_text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+
+  {% include "partials/footer.njk" %}
+</div>
+
+<script src="common.js" defer async></script>
+<script src="products.js" defer async></script>
+{% endblock %}

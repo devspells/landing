@@ -8,10 +8,16 @@
 {% block body %}
 
 <div class="content">
-  <header>
-    <a href="/">
-      <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
-    </a>
+  <header class="header-with-nav">
+    <div>
+      <a href="/">
+        <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+      </a>
+    </div>
+
+    <div>
+      {% include "partials/nav.njk" %}
+    </div>
   </header>
 
   <main>

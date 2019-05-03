@@ -11,6 +11,9 @@ module.exports = {
     index: __dirname + '/../src/index.js',
     waloun: __dirname + '/../src/waloun.js',
     'production-info': __dirname + '/../src/production-info.js',
+    projects: __dirname + '/../src/projects.js',
+    products: __dirname + '/../src/products.js',
+    offers: __dirname + '/../src/offers.js',
   },
   output: { filename: '[name]-[hash].js', path: __dirname + '/../build/assets' },
   resolve: {

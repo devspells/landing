@@ -26,11 +26,14 @@
         <span class="email__title">{{ email_title }}</span>
         <a class="email__link" href="mailto:{{ email }}">{{ email }}</a>
       </address>
+
+      {% include "partials/nav.njk" %}
+
     </section>
   </main>
 </div>
 
-<div class="bottom-background bottom-background__root"></div>
+<div class="page-background page-background__root"></div>
 
 <script src="common.js" defer async></script>
 <script src="index.js" defer async></script>

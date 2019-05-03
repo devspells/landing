@@ -1,0 +1,22 @@
+.footer {
+  color: var(--white);
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--white);
+  text-decoration: none;
+  margin-top: .5em;
+  padding-bottom: .25em;
+
+  display: inline-block;
+  border-bottom: dashed 2px var(--yellow);
+}
+
+.footer a:hover { border-bottom: dashed 2px var(--blue); }
+
+@media (min-width: 600px) {
+
+  .footer { text-align: right; }
+}

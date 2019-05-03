@@ -1,10 +1,13 @@
 // blocks
+import './blocks/main-nav';
+import './blocks/header-with-nav';
 import './blocks/service-worker';
 import './blocks/global';
 import './blocks/google-analytics';
-import './blocks/bottom-background';
+import './blocks/page-background';
 import './blocks/content';
 import './blocks/logo';
 import './blocks/title';
 import './blocks/subtitle';
 import './blocks/product-feature';
+import './blocks/footer';

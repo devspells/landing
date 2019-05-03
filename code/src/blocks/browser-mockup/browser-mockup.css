@@ -1,0 +1,21 @@
+.browser-mockup {
+  max-width: 600px;
+  margin: 0 auto;
+  border-top: 1.2em solid #ccc;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px;
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -.75em;
+  left: .75em;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2.5px  #ff1a1a, 1em 0 0 2.5px #83a02c, 2em 0 0 2.5px #ffad33;
+}

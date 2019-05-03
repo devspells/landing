@@ -30,7 +30,6 @@
 @media (min-width: 1200px) {
   .waloun-hero-image {
     height: 740px;
-    background-position: bottom right;
     background-size: 100%;
     background-image: url('./waloun-hero-image.svg');
   }

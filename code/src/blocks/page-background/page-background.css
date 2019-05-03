@@ -1,5 +1,5 @@
-.bottom-background {
-  position: fixed;
+.page-background {
+  position: absolute;
   z-index: 0;
   top: 0;
   left: 0;
@@ -10,9 +10,9 @@
   background-position: bottom right;
 }
 
-.bottom-background__root   { background-image: url('bottom-background__root.svg'); }
+.page-background__root   { background-image: url('page-background__root.svg'); }`
 
 @media (min-width: 800px;) {
 
-  .bottom-background { background-size: 60%; }
+  .page-background { background-size: 60%; }
 }

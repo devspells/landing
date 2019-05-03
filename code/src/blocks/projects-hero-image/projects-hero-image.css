@@ -1,0 +1,24 @@
+.projects-hero-image {
+  z-index: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url('./projects-hero-image_mobile.svg');
+  background-size: contain;
+
+  height: 470px;
+}
+
+@media (min-width: 500px) {
+  .projects-hero-image {
+    background-size: 80% contain;
+  }
+}
+
+
+@media (min-width: 1500px) {
+  .projects-hero-image {
+    height: 750px;
+    background-image: url('./projects-hero-image.svg');
+  }
+}

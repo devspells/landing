@@ -1,0 +1,55 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="projects.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+  <header class="header-with-nav">
+    <div>
+      <a href="/">
+        <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+      </a>
+    </div>
+
+    <div>
+      {% include "partials/nav.njk" %}
+    </div>
+  </header>
+
+
+  <main>
+    <section>
+      <div class="projects-hero-image">
+        <h1 class="title">{{ page_title }}</h1>
+
+        <strong class="subtitle">{{ page_subtitle }}</strong>
+      </div>
+
+      <ul class="items-grid">
+        {% for project in projects %}
+        <li class="project-info">
+          <h2 class="project-info__title">{{ project.title }}</h2>
+
+          <div class="browser-mockup">
+            <img class="project-info__image" alt="{{ project.alt }}" src="{{ project.img }}">
+          </div>
+
+          <a href="{{ project.link }}" class="project-info__link" target="_blank" rel="noopener noreferrer">
+            {{ project.link_text }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+
+  {% include "partials/footer.njk" %}
+</div>
+
+<script src="common.js" defer async></script>
+<script src="projects.js" defer async></script>
+{% endblock %}

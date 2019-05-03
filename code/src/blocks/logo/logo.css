@@ -3,6 +3,6 @@
   max-width: 5em;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 800px) {
   .logo { max-width: 7em; }
 }

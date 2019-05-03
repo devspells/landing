@@ -1,0 +1,28 @@
+.items-grid {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 2em;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items-grid > li {
+  box-sizing: border-box;
+
+  padding: 1em;
+  margin: 2% 0;
+  width: 100%;
+
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+
+  .items-grid > li {
+    width: 48%;
+    margin: 1%;
+  }
+}

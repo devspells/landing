@@ -1,0 +1,70 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="offers.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+  <header class="header-with-nav">
+    <div>
+      <a href="/">
+        <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+      </a>
+    </div>
+
+    <div>
+      {% include "partials/nav.njk" %}
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="title">{{page_title}}</h1>
+
+      <div class="offer">
+        <div>
+          <h2 class="offer__title">{{software_dev_title}}</h2>
+
+          {% for item in software_dev_text %}
+          <p class="offer__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+        <img class="offer__image" src="assets/software-development.svg" alt="{{software_dev_alt}}">
+      </div>
+
+      <div class="offer">
+        <div>
+          <h2 class="offer__title">{{audit_title}}</h2>
+
+          {% for item in audit_text %}
+          <p class="offer__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+        <img class="offer__image" src="assets/software-audit.svg" alt="{{audit_alt}}">
+      </div>
+
+      <div class="offer">
+        <div>
+          <h2 class="offer__title">{{website_dev_title}}</h2>
+
+          {% for item in website_dev_text %}
+          <p class="offer__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+        <img class="offer__image" src="assets/website-dev.svg" alt="{{website_dev_alt}}">
+      </div>
+    </section>
+  </main>
+
+  {% include "partials/footer.njk" %}
+</div>
+
+<script src="common.js" defer async></script>
+<script src="offers.js" defer async></script>
+{% endblock %}
