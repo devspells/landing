@@ -1,12 +1,14 @@
-body { background: none; }
+html { margin: 0; padding: 0; }
+body { background: none; margin: 0; padding: 0; }
+p { padding: 0; margin: 0; }
 
 .production-info {
   box-sizing: border-box;
   color: var(--dark);
   width: 100%;
   text-align: center;
-  padding: 1em;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   transition: opacity 0.5s;
   opacity: .5;
 }
@@ -17,7 +19,7 @@ body { background: none; }
 }
 
 
-.production-info__text {
+p.production-info__text {
   margin: 0;
   padding: 0;
 
