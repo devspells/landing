@@ -56,6 +56,8 @@
   .product-feature { display: flex; justify-content: space-around; }
   .product-feature:nth-of-type(odd) { flex-direction: row-reverse; }
 
+  .product-feature > div { margin-right: 50px; }
+
   .product-feature__title { text-align: left; display: inline-block; width: auto; }
 
   .product-feature__text { text-align: left; margin: 1em 0; }

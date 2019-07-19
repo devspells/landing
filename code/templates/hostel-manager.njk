@@ -1,0 +1,84 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="hostel-manager.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+  <header class="header-with-nav">
+    <div>
+      <a href="/">
+        <img class="logo" src="assets/logo-dark.svg" alt="компьютеризация - логотип">
+      </a>
+    </div>
+
+    <div>
+      {% include "partials/nav.njk" %}
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="hostel-manager-hero-image">
+        <h1 class="title">{{title}}</h1>
+        <strong class="subtitle">{{ subtitle }}</strong>
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_intro_title }}</h2>
+
+          {% for item in product_feature_intro %}
+          <p class="product-feature__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+          <img class="product-feature__image" src="assets/hostel-manager-intro.png" alt="{{ hostel_manager_intro_alt }}">
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_main_features_title }}</h2>
+
+          {% for item in product_feature_main_features %}
+          <p class="product-feature__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+          <img class="product-feature__image" src="assets/hostel-manager-main-features.png" alt="{{ hostel_manager__main_features_alt }}">
+      </div>
+
+      <div class="product-feature">
+        <div>
+          <h2 class="product-feature__title">{{ product_feature_offer_title }}</h2>
+
+          {% for item in product_feature_offer %}
+          <p class="product-feature__text">{{ item.text }}</p>
+          {% endfor %}
+        </div>
+
+        <img class="product-feature__image" src="assets/hostel-manager-offer.png" alt="{{ hostel_manager__offer_alt }}">
+      </div>
+
+      <div class="user-action">
+        <strong>{{ user_action_title }}</strong>
+        {% for item in user_action_text %}
+        <br>
+        {{ item.text }}
+        {% endfor %}
+        <br>
+
+        <a class="user-action__phone" href="tel:{{ phone_href }}">{{ phone_text }}</a>
+        <br>
+        <a class="user-action__email" href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="common.js" defer async></script>
+<script src="hostel-manager.js" defer async></script>
+{% endblock %}

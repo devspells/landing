@@ -1,0 +1,36 @@
+.hostel-manager-hero-image {
+  z-index: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  background-image: url('./hostel-manager-hero-image_mobile.svg');
+
+  height: 400px;
+}
+
+@media (min-width: 450px) {
+  .hostel-manager-hero-image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 700px) {
+  .hostel-manager-hero-image {
+    background-image: url('./hostel-manager-hero-image_mobile-wide.svg');
+  }
+}
+
+@media (min-width: 800px) {
+  .hostel-manager-hero-image {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hostel-manager-hero-image {
+    height: 840px;
+    background-size: 100%;
+    background-image: url('./hostel-manager-hero-image.svg');
+  }
+}

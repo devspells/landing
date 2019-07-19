@@ -11,6 +11,7 @@ module.exports = {
     index: __dirname + '/../src/index.js',
     waloun: __dirname + '/../src/waloun.js',
     'mtc-crm': __dirname + '/../src/mtc-crm.js',
+    'hostel-manager': __dirname + '/../src/hostel-manager.js',
     'production-info': __dirname + '/../src/production-info.js',
     projects: __dirname + '/../src/projects.js',
     products: __dirname + '/../src/products.js',
