@@ -1,6 +1,11 @@
 landing changelog
 =================
 
+[1.8.0] - 30.07.2019
+--------------------
+Added:
+* new happychess.club landing
+
 [1.7.0] - 20.07.2019
 --------------------
 Added:
