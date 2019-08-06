@@ -1,6 +1,11 @@
 landing changelog
 =================
 
+[1.9.0] - 07.08.2019
+--------------------
+Added:
+* [FROM] attribute in production-info widget link
+
 [1.8.0] - 30.07.2019
 --------------------
 Added:

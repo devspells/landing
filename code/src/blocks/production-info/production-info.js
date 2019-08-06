@@ -14,7 +14,7 @@ function parseQuery(queryString) {
 
 const renderTemplate = params => (`
   <div class="production-info">
-    <a target="_blank" href="https://computerization.dev" rel="noopener noreferrer">
+    <a target="_blank" href="https://computerization.dev?from=${params.project}" rel="noopener noreferrer">
       <img
         class="production-info__logo"
         alt="компьютеризация логотип"
