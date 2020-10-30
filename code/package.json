@@ -6,7 +6,6 @@
   "scripts": {
     "build": "NPM_SCRIPT=build ./scripts/npm-script.sh",
     "dev": "NPM_SCRIPT=dev ./scripts/npm-script.sh",
-    "nginx": "./scripts/start-nginx.sh",
     "reinstall": "NPM_SCRIPT=reinstall ./scripts/npm-script.sh",
     "deploy": "./scripts/deploy.sh"
   },
