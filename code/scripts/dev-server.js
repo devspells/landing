@@ -18,7 +18,7 @@ const build = () => {
     execSync('cp -a static-assets/. build/assets/');
     linkAssetsInHTML();
 
-    console.log('rebuild completed');
+    console.log(`${Date.now()}: rebuild completed`);
   });
 };
 
